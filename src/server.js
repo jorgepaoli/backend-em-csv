@@ -20,13 +20,11 @@ app.get('/', (req, res) => {
     rotasDisponiveis: {
       listarTodasAsLeituras: 'GET /api/leituras',
       pesquisarLeiturasPorData: 'GET /api/leituras/data/2026-04-01',
-      pesquisarLeiturasImportadasPorCsv: 'GET /api/leituras/data/2026-04-02',
+      importarCsv: 'npm run import:csv',
     },
     formatoDaData: 'YYYY-MM-DD',
     exemplosDeUso: [
-      'http://localhost:3000/api/leituras',
       'http://localhost:3000/api/leituras/data/2026-04-01',
-      'http://localhost:3000/api/leituras/data/2026-04-02',
     ],
   });
 });
